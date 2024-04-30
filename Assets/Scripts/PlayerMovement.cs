@@ -3,6 +3,12 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5.0f;
+    private Rigidbody2D rb;
+
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
@@ -11,6 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 movement = new Vector2(horizontal, vertical).normalized;
 
-        transform.Translate(movement * speed * Time.deltaTime);
+        rb.velocity = movement * speed;
     }
 }
