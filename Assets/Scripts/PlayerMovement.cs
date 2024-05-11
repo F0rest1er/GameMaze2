@@ -17,6 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 movement = new Vector2(horizontal, vertical).normalized;
 
-        rb.velocity = movement * speed;
+        rb.velocity = movement;
     }
 }
