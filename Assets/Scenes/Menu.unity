@@ -933,9 +933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb24dc91508cb13479a9cbfad21866a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
-  buttonAnimator: {fileID: 0}
-  button: {fileID: 967160407}
+  soundButton: {fileID: 967160407}
 --- !u!114 &967160407
 MonoBehaviour:
   m_ObjectHideFlags: 0
